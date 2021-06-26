@@ -13,17 +13,10 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:gravity="center"
-        android:text="Missing Child Details"
+        android:text="User Registeration"
         android:textColor="@color/black"
         android:textSize="25sp"
         android:textStyle="bold" />
-
-    <ImageView
-        android:layout_width="160dp"
-        android:layout_height="160dp"
-        android:src="@drawable/ic_launcher_background"
-        android:layout_gravity="center"
-        android:layout_marginTop="30dp"/>
 
     <ScrollView
         android:layout_width="match_parent"
@@ -45,7 +38,7 @@
                 android:layout_marginLeft="20dp"
                 android:layout_marginEnd="20dp"
                 android:layout_marginRight="20dp"
-                android:hint="Child Name"
+                android:hint="Full Name"
                 app:boxBackgroundMode="outline"
                 app:boxCornerRadiusTopEnd="15dp"
                 app:boxCornerRadiusTopStart="15dp"
@@ -74,7 +67,7 @@
                 android:layout_marginTop="30dp"
                 android:layout_marginEnd="20dp"
                 android:layout_marginRight="20dp"
-                android:hint="Child Age"
+                android:hint="Email"
                 app:boxBackgroundMode="outline"
                 app:boxCornerRadiusTopEnd="15dp"
                 app:boxCornerRadiusTopStart="15dp"
@@ -85,7 +78,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/textInputLayout">
 
                 <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/AMC_TIET_age"
+                    android:id="@+id/AMC_TIET_email"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:inputType="number" />
@@ -102,7 +95,7 @@
                 android:layout_marginTop="30dp"
                 android:layout_marginEnd="20dp"
                 android:layout_marginRight="20dp"
-                android:hint="Child's Father Name"
+                android:hint="Password"
                 app:boxBackgroundMode="outline"
                 app:boxCornerRadiusTopEnd="15dp"
                 app:boxCornerRadiusTopStart="15dp"
@@ -115,7 +108,8 @@
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/AMC_TIET_F_name"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content" />
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword"/>
 
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -129,7 +123,7 @@
                 android:layout_marginTop="30dp"
                 android:layout_marginEnd="20dp"
                 android:layout_marginRight="20dp"
-                android:hint="Child's Identification Mark"
+                android:hint="Address"
                 app:boxBackgroundMode="outline"
                 app:boxCornerRadiusTopEnd="15dp"
                 app:boxCornerRadiusTopStart="15dp"
@@ -140,7 +134,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/textInputLayout3">
 
                 <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/AMC_TIET_identification"
+                    android:id="@+id/AMC_TIET_address"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content" />
 
@@ -184,7 +178,7 @@
                 android:layout_marginTop="30dp"
                 android:layout_marginEnd="20dp"
                 android:layout_marginRight="20dp"
-                android:hint="Child Home Address"
+                android:hint="Date of Birth"
                 app:boxBackgroundMode="outline"
                 app:boxCornerRadiusTopEnd="15dp"
                 app:boxCornerRadiusTopStart="15dp"
@@ -192,45 +186,18 @@
                 app:hintTextColor="#A112B8"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textInputLayout5">
+                app:layout_constraintTop_toBottomOf="@id/textInputLayout5">
 
                 <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/AMC_TIET_address"
+                    android:id="@+id/AMC_TIET_dob"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content" />
-
-            </com.google.android.material.textfield.TextInputLayout>
-
-
-            <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/textInputLayout7"
-                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="20dp"
-                android:layout_marginLeft="20dp"
-                android:layout_marginTop="30dp"
-                android:layout_marginEnd="20dp"
-                android:layout_marginRight="20dp"
-                android:hint="Missing Since"
-                app:boxBackgroundMode="outline"
-                app:boxCornerRadiusTopEnd="15dp"
-                app:boxCornerRadiusTopStart="15dp"
-                app:boxStrokeColor="#7B158C"
-                app:hintTextColor="#A112B8"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textInputLayout6">
-
-                <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/AMC_TIET_missingSince"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content" />
+                    android:layout_height="wrap_content"
+                    android:inputType="number" />
 
             </com.google.android.material.textfield.TextInputLayout>
 
             <TextView
-                android:id="@+id/textView5"
+                android:id="@+id/textView2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="20dp"
@@ -242,20 +209,20 @@
                 android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textInputLayout7"
+                app:layout_constraintTop_toBottomOf="@+id/textInputLayout6"
                 app:layout_constraintVertical_bias="0.0" />
 
             <RadioGroup
                 android:id="@+id/radioGroup"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="30dp"
+                android:layout_marginTop="29dp"
                 android:orientation="horizontal"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.1"
-                app:layout_constraintStart_toEndOf="@+id/textView5"
-                app:layout_constraintTop_toBottomOf="@+id/textInputLayout7"
+                app:layout_constraintStart_toEndOf="@+id/textView2"
+                app:layout_constraintTop_toBottomOf="@+id/textInputLayout6"
                 app:layout_constraintVertical_bias="0.0">
 
                 <RadioButton
@@ -283,11 +250,11 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="60dp"
                 android:layout_marginLeft="60dp"
-                android:layout_marginTop="5dp"
+                android:layout_marginTop="30dp"
                 android:layout_marginEnd="60dp"
                 android:layout_marginRight="60dp"
-                android:layout_marginBottom="30dp"
-                android:text="Submit Report"
+                android:layout_marginBottom="50dp"
+                android:text="Register Account"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"

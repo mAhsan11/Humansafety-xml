@@ -9,18 +9,17 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Layout_design">
+        <activity android:name=".Regesteration"></activity>
         <activity android:name=".MissingChild">
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Login">
-        </activity>
+        <activity android:name=".Login"></activity>
         <activity android:name=".Feedback" />
-        <activity android:name=".AlertActivity"></activity>
+        <activity android:name=".AlertActivity" />
     </application>
 
 </manifest>
