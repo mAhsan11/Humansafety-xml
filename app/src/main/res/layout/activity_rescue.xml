@@ -24,6 +24,7 @@
             android:layout_weight="1">
 
             <ImageView
+                android:id="@+id/AR_iv_police"
                 android:layout_width="80dp"
                 android:layout_height="80dp"
                 android:layout_marginTop="30dp"
@@ -51,6 +52,7 @@
             android:layout_weight="1">
 
             <ImageView
+                android:id="@+id/AR_iv_ranger"
                 android:layout_width="80dp"
                 android:layout_height="80dp"
                 android:layout_marginTop="30dp"
@@ -86,6 +88,7 @@
             android:layout_weight="1">
 
             <ImageView
+                android:id="@+id/AR_iv_ambulance"
                 android:layout_width="80dp"
                 android:layout_height="80dp"
                 android:layout_marginTop="30dp"
@@ -113,6 +116,7 @@
             android:layout_weight="1">
 
             <ImageView
+                android:id="@+id/AR_iv_firebrigade"
                 android:layout_width="80dp"
                 android:layout_height="80dp"
                 android:layout_marginTop="30dp"
@@ -148,6 +152,7 @@
             android:layout_weight="1">
 
             <ImageView
+                android:id="@+id/AR_iv_traffic_police"
                 android:layout_width="80dp"
                 android:layout_height="80dp"
                 android:layout_marginTop="30dp"
@@ -175,6 +180,7 @@
             android:layout_weight="1">
 
             <ImageView
+                android:id="@+id/AR_iv_motorway_police"
                 android:layout_width="80dp"
                 android:layout_height="80dp"
                 android:layout_marginTop="30dp"
