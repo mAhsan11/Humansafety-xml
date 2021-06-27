@@ -9,16 +9,20 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Layout_design">
-        <activity android:name=".Default"></activity>
-        <activity android:name=".Harrasment">
+        <activity android:name=".Default">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
-        <activity android:name=".Rescue">
-        </activity>
+        <activity android:name=".Harrasment"></activity>
+        <activity android:name=".Rescue"></activity>
         <activity android:name=".Regesteration" />
         <activity android:name=".MissingChild" />
         <activity android:name=".Login" />
         <activity android:name=".Feedback" />
-        <activity android:name=".AlertActivity" >
+        <activity android:name=".AlertActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
